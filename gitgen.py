@@ -3,11 +3,11 @@ file_name = ".gitignore"
 exclude = [
 	"node_modules/", 
 	"bin/",
-
 	]
 
 def gen_constants():
-	return '\n'.join(sentence)
+	print('\n'.join(exclude))
+	return '\n'.join(exclude)
 
 with open(file_name, "w") as gitignore :
 	gitignore.write(gen_constants())
